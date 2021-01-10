@@ -1,6 +1,14 @@
-#include <iostream>
+#include "mainwindow.h"
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+#include <QApplication>
+
+int main(int argc, char *argv[])
+{
+    // listen to any event on the app
+    QApplication a(argc, argv);
+    FinancialManagement w;
+
+    // start the main event
+    w.show();
+    return a.exec();
 }
